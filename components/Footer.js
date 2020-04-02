@@ -3,7 +3,7 @@ import React from "react";
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer className="ftco-footer ftco-section">
+      <footer className="ftco-footer ftco-section" id="contact">
         <div className="container">
           <div className="row mb-5">
             <div className="col-md">

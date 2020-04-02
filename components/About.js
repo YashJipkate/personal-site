@@ -3,7 +3,7 @@ import React from "react";
 export default class About extends React.Component {
   render() {
     return (
-      <section className="ftco-section ftco-intro">
+      <section className="ftco-section ftco-intro" id="about">
         <div className="container">
           <div className="row justify-content-end">
             <div className="col-md-8">

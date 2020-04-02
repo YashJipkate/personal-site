@@ -3,7 +3,7 @@ import React from "react";
 export default class TechnicalExperiences extends React.Component {
   render() {
     return (
-      <section className="ftco-section ftco-portfolio">
+      <section className="ftco-section ftco-portfolio" id="technical">
         <div className="container-fluid">
           <div className="row justify-content-center pb-3">
             <div className="col-md-12 mb-5 heading-section text-center">

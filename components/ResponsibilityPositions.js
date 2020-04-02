@@ -3,7 +3,7 @@ import React from "react";
 export default class ResponsibilityPositions extends React.Component {
   render() {
     return (
-      <section className="ftco-section ftco-leader">
+      <section className="ftco-section ftco-leader" id="positions">
         <div className="container-fluid">
           <div className="row justify-content-center pb-3">
             <div className="col-md-12 mb-5 heading-section text-center">
