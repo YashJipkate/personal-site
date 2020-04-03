@@ -8,14 +8,11 @@ export default class Header extends React.Component {
         id="ftco-navbar"
       >
         <div className="container">
-          <a role="button"
-          href="/"
+          <a
+            role="button"
+            href="/"
             className="navbar-brand"
-            onClick={() =>
-              document
-                .getElementById("home")
-                .scrollIntoView({ behaviour: "smooth" })
-            }
+            onClick={() => document.getElementById("home").scrollIntoView()}
           >
             YJ
           </a>
@@ -34,18 +31,24 @@ export default class Header extends React.Component {
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <span className="nav-link"><u>Jr. Undergraduate, IIT(BHU)</u></span>
+                <span className="nav-link">
+                  <u>Jr. Undergraduate, IIT(BHU)</u>
+                </span>
               </li>
               <li className="nav-item">
-                <span className="nav-link">Resume</span>
+                <a
+                  className="nav-link"
+                  href="/files/resume.pdf"
+                  target="_blank"
+                >
+                  Resume
+                </a>
               </li>
               <li className="nav-item">
                 <button
                   className="nav-link btn"
                   onClick={() =>
-                    document
-                      .getElementById("about")
-                      .scrollIntoView({ behaviour: "smooth" })
+                    document.getElementById("about").scrollIntoView()
                   }
                 >
                   About
@@ -55,9 +58,7 @@ export default class Header extends React.Component {
                 <button
                   className="nav-link btn"
                   onClick={() =>
-                    document
-                      .getElementById("technical")
-                      .scrollIntoView({ behaviour: "smooth" })
+                    document.getElementById("technical").scrollIntoView()
                   }
                 >
                   Technical
@@ -67,9 +68,7 @@ export default class Header extends React.Component {
                 <button
                   className="nav-link btn"
                   onClick={() =>
-                    document
-                      .getElementById("positions")
-                      .scrollIntoView({ behaviour: "smooth" })
+                    document.getElementById("positions").scrollIntoView()
                   }
                 >
                   Positions
@@ -79,9 +78,7 @@ export default class Header extends React.Component {
                 <button
                   className="nav-link btn"
                   onClick={() =>
-                    document
-                      .getElementById("contact")
-                      .scrollIntoView({ behaviour: "smooth" })
+                    document.getElementById("contact").scrollIntoView()
                   }
                 >
                   Contact

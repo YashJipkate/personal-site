@@ -30,7 +30,7 @@ $primary: #fdcb6e;
 }
 
 html {
-	// overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: $font-primary;
