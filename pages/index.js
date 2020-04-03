@@ -28,6 +28,20 @@ export default class Index extends React.Component {
           <link href="/css/icomoon.css" rel="stylesheet" />
           <link rel="shortcut icon" href="/favicon.png" />
           <title>Yash Jipkate | Personal</title>
+          <meta name="author" content="Yash Jipkate" />
+          <meta
+            name="description"
+            content="This is the official portfolio website of Yash Jipkate. It contains all the information and contact details that aims to give the visitor complete look into the professional life of Yash Jipkate."
+          />
+          <meta
+            property="og:image"
+            content="https://cdn.dribbble.com/users/2424687/screenshots/6065697/cat-01.png"
+          />
+          <meta
+            property="og:description"
+            content="This is the official portfolio website of Yash Jipkate. It contains all the information and contact details that aims to give the visitor complete look into the professional life of Yash Jipkate."
+          />
+          <meta property="og:title" content="Yash Jipkate | Personal" />
         </Head>
         <Header />
         <Landing />
