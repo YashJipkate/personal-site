@@ -8,14 +8,12 @@ export default class Header extends React.Component {
         id="ftco-navbar"
       >
         <div className="container">
-          <a
-            role="button"
-            href="/"
-            className="navbar-brand"
+          <button
+            className="navbar-brand btn"
             onClick={() => document.getElementById("home").scrollIntoView()}
           >
             YJ
-          </a>
+          </button>
           <button
             className="navbar-toggler"
             type="button"
