@@ -26,6 +26,8 @@ export default class Index extends React.Component {
             rel="stylesheet"
           />
           <link href="/css/icomoon.css" rel="stylesheet" />
+          <link rel="shortcut icon" href="/favicon.png" />
+          <title>Yash Jipkate | Personal</title>
         </Head>
         <Header />
         <Landing />
