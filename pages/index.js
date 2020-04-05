@@ -1,6 +1,7 @@
 import React from "react";
 
 import Head from "next/head";
+
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import About from "../components/About";
@@ -26,8 +27,8 @@ export default class Index extends React.Component {
             rel="stylesheet"
           />
           <link href="/css/icomoon.css" rel="stylesheet" />
-          <link rel="shortcut icon" href="/favicon.png" />
-          <title>Yash Jipkate | Personal</title>
+          <link rel="shortcut icon" href="/favicon.png" key="icon" />
+          <title key="title">Yash Jipkate | Personal</title>
           <meta name="author" content="Yash Jipkate" />
           <meta
             name="description"
