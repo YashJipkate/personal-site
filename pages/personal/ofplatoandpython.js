@@ -5,6 +5,29 @@ import Head from "next/head";
 export default class OfPlatoAndPython extends React.Component {
   componentDidMount() {
     this.animateTimeline();
+    this.animateGallery();
+  }
+
+  animateGallery() {
+    $(".portfolio-filter ul li").on("click", function() {
+      $(".portfolio-filter ul li").removeClass("active");
+      $(this).addClass("active");
+
+      var data = $(this).attr("data-filter");
+      $workGrid.isotope({
+        filter: data
+      });
+    });
+
+    if (document.getElementById("portfolio")) {
+      var $workGrid = $(".portfolio-grid").isotope({
+        itemSelector: ".all",
+        percentPosition: true,
+        masonry: {
+          columnWidth: ".grid-sizer"
+        }
+      });
+    }
   }
 
   animateTimeline() {
@@ -65,9 +88,116 @@ export default class OfPlatoAndPython extends React.Component {
     return (
       <div>
         <Head>
-          <title key="title">Soft and Sweet &lt;3</title>
+          <title key="title">1 Year Anniversary &lt;3</title>
           <link rel="shortcut icon" href="/favicon.png" key="icon" />
         </Head>
+        <section className="portfolio_area area-padding" id="portfolio">
+          <div className="container">
+            <div className="area-heading">
+              <h3>
+                Check <span>Recent</span> Work
+              </h3>
+              <p>She'd earth that midst void creeping him above seas.</p>
+            </div>
+
+            <div className="filters portfolio-filter">
+              <ul>
+                <li className="active" data-filter="*">
+                  all
+                </li>
+                <li data-filter=".weeding">weeding </li>
+                <li data-filter=".motion"> motion</li>
+                <li data-filter=".portrait">portrait</li>
+                <li data-filter=".fashion">fashion</li>
+              </ul>
+            </div>
+
+            <div className="filters-content">
+              <div className="row portfolio-grid">
+                <div className="grid-sizer col-md-3 col-lg-4"></div>
+                <div className="col-lg-4 col-md-6 all fashion motion">
+                  <div className="single_portfolio">
+                    <img
+                      className="img-fluid w-100"
+                      src="/images/personal/1.jpg"
+                      alt=""
+                    />
+                    <div className="short_info">
+                      <p>Fashion</p>
+                      <h4>
+                        <a href="portfolio-details.html">Fahion photography</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-8 col-md-6 all weeding motion portrait">
+                  <div className="single_portfolio">
+                    <img
+                      className="img-fluid w-100"
+                      src="/images/personal/2.jpg"
+                      alt=""
+                    />
+                    <div className="short_info">
+                      <p>construction</p>
+                      <h4>
+                        <a href="portfolio-details.html">Desert Work, Dubai</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6 all weeding motion fashion">
+                  <div className="single_portfolio">
+                    <img
+                      className="img-fluid w-100"
+                      src="/images/personal/4.jpg"
+                      alt=""
+                    />
+                    <div className="short_info">
+                      <p>construction</p>
+                      <h4>
+                        <a href="portfolio-details.html">Desert Work, Dubai</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6 all motion portrait fashion">
+                  <div className="single_portfolio">
+                    <img
+                      className="img-fluid w-100"
+                      src="/images/personal/5.jpg"
+                      alt=""
+                    />
+                    <div className="short_info">
+                      <p>construction</p>
+                      <h4>
+                        <a href="portfolio-details.html">Desert Work, Dubai</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-8 col-md-6 all weeding  fashion">
+                  <div className="single_portfolio">
+                    <img
+                      className="img-fluid w-100"
+                      src="/images/personal/6.jpg"
+                      alt=""
+                    />
+                    <div className="short_info">
+                      <p>construction</p>
+                      <h4>
+                        <a href="portfolio-details.html">Desert Work, Dubai</a>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <div className="timeline-container" id="timeline-1">
           <div className="timeline-header">
             <h2 className="timeline-header__title">Mustafa Kemal Atatürk</h2>
@@ -125,6 +255,8 @@ export default class OfPlatoAndPython extends React.Component {
           </div>
         </div>
         <script src="/js/jquery.min.js"></script>
+        <script src="/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/js/isotope.pkgd.min.js"></script>
       </div>
     );
   }
