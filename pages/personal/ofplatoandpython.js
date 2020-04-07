@@ -6,6 +6,23 @@ export default class OfPlatoAndPython extends React.Component {
   componentDidMount() {
     this.animateTimeline();
     this.animateGallery();
+    this.animateCarousel();
+  }
+
+  animateCarousel() {
+    $(".hero-slider").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      items: 1,
+      dots: true,
+      animateOut: "fadeOut",
+      animateIn: "fadeIn",
+      navText: ["", ""],
+      autoplayTimeout: 15000,
+      mouseDrag: false,
+      autoplay: true,
+    });
   }
 
   animateGallery() {
@@ -90,7 +107,97 @@ export default class OfPlatoAndPython extends React.Component {
         <Head>
           <title key="title">1 Year Anniversary &lt;3</title>
           <link rel="shortcut icon" href="/favicon.png" key="icon" />
+          <link rel="stylesheet" href="/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="/css/owl.carousel.min.css" />
         </Head>
+        <section className="hero-section">
+          <div className="hero-slider owl-carousel">
+            <div
+              className="hs-item set-bg"
+              style={{
+                backgroundImage: "url('/images/personal/slider/1.jpg')"
+              }}
+            >
+              <div className="container">
+                <h2>Style is forever</h2>
+                <span className="site-btn">
+                  Read More <i className="fa fa-angle-double-right"></i>
+                </span>
+              </div>
+              <div
+                className="next-hs set-bg"
+                style={{
+                  backgroundImage: "url('/images/personal/slider/2.jpg')"
+                }}
+              >
+                <span className="nest-hs-btn">Next</span>
+              </div>
+            </div>
+            <div
+              className="hs-item set-bg"
+              style={{
+                backgroundImage: "url('/images/personal/slider/1.jpg')"
+              }}
+            >
+              <div className="container">
+                <h2>Style is forever</h2>
+                <span className="site-btn">
+                  Read More <i className="fa fa-angle-double-right"></i>
+                </span>
+              </div>
+              <div
+                className="next-hs set-bg"
+                style={{
+                  backgroundImage: "url('/images/personal/slider/2.jpg')"
+                }}
+              >
+                <span className="nest-hs-btn">Next</span>
+              </div>
+            </div>
+            <div
+              className="hs-item set-bg"
+              style={{
+                backgroundImage: "url('/images/personal/slider/1.jpg')"
+              }}
+            >
+              <div className="container">
+                <h2>Style is forever</h2>
+                <span className="site-btn">
+                  Read More <i className="fa fa-angle-double-right"></i>
+                </span>
+              </div>
+              <div
+                className="next-hs set-bg"
+                style={{
+                  backgroundImage: "url('/images/personal/slider/2.jpg')"
+                }}
+              >
+                <span className="nest-hs-btn">Next</span>
+              </div>
+            </div>
+            <div
+              className="hs-item set-bg"
+              style={{
+                backgroundImage: "url('/images/personal/slider/2.jpg')"
+              }}
+            >
+              <div className="container">
+                <h2>Style is forever</h2>
+                <span className="site-btn">
+                  Read More <i className="fa fa-angle-double-right"></i>
+                </span>
+              </div>
+              <div
+                className="next-hs set-bg"
+                style={{
+                  backgroundImage: "url('/images/personal/slider/1.jpg')"
+                }}
+              >
+                <span className="nest-hs-btn">Next</span>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="portfolio_area area-padding" id="portfolio">
           <div className="container">
             <div className="area-heading">
@@ -255,6 +362,8 @@ export default class OfPlatoAndPython extends React.Component {
           </div>
         </div>
         <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
         <script src="/js/imagesloaded.pkgd.min.js"></script>
         <script src="/js/isotope.pkgd.min.js"></script>
       </div>
