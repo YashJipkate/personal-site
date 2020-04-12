@@ -30,43 +30,10 @@ $font_3: "Helvetica Neue Bold", sans-serif;
    Helper CSS
  -----------------------*/
 
-.section-title {
-  margin-bottom: 110px;
-  span {
-    color: $color;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-  h2 {
-    padding-top: 15px;
-    line-height: 1.4;
-  }
-}
-
 .set-bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-}
-
-.spad {
-  padding-top: 115px;
-  padding-bottom: 115px;
-}
-
-.text-white {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  li,
-  a {
-    color: #fff;
-  }
 }
 
 /*---------------------
