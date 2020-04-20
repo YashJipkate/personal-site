@@ -2,7 +2,7 @@ import React from "react";
 
 import Head from "next/head";
 
-import { initGA, logPageView } from "../../components/googleAnalytics";
+import { initGA, logPageView } from "../../components/GoogleAnalytics";
 
 export default class OfPlatoAndPython extends React.Component {
   componentDidMount() {

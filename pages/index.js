@@ -9,7 +9,7 @@ import TechnicalExperiences from "../components/TechnicalExperiences";
 import ResponsibilityPositions from "../components/ResponsibilityPositions";
 import Footer from "../components/Footer";
 
-import { initGA, logPageView } from "../components/googleAnalytics";
+import { initGA, logPageView } from "../components/GoogleAnalytics";
 
 export default class Index extends React.Component {
   componentDidMount() {
