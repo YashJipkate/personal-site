@@ -2,11 +2,18 @@ import React from "react";
 
 import Head from "next/head";
 
+import { initGA, logPageView } from "../../components/googleAnalytics";
+
 export default class OfPlatoAndPython extends React.Component {
   componentDidMount() {
     this.animateTimeline();
     this.animateGallery();
     this.animateCarousel();
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
   }
 
   animateCarousel() {
@@ -628,7 +635,7 @@ export default class OfPlatoAndPython extends React.Component {
                           out stronger, more attached and more deep in love than
                           ever before.
                         </span>
-                      </h4> 
+                      </h4>
                     </div>
                   </div>
                 </div>
@@ -646,10 +653,7 @@ export default class OfPlatoAndPython extends React.Component {
           <div className="timeline">
             <div className="timeline-item" data-text="I SAW YOU, YOU SAW ME">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/21.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/21.jpg" />
                 <h2 className="timeline__content-title">
                   18<sup>th</sup> Jan'19
                 </h2>
@@ -664,10 +668,7 @@ export default class OfPlatoAndPython extends React.Component {
             </div>
             <div className="timeline-item" data-text="THE AROMA OF THE BLOSSOM">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/22.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/22.jpg" />
                 <h2 className="timeline__content-title">
                   14<sup>th</sup> Apr'19
                 </h2>
@@ -693,10 +694,7 @@ export default class OfPlatoAndPython extends React.Component {
             </div>
             <div className="timeline-item" data-text="SHE LOVES ME!">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/23.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/23.jpg" />
                 <h2 className="timeline__content-title">
                   6<sup>th</sup> May'19
                 </h2>
@@ -719,10 +717,7 @@ export default class OfPlatoAndPython extends React.Component {
             </div>
             <div className="timeline-item" data-text="AND I LOVE HER TOO!">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/24.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/24.jpg" />
                 <h2 className="timeline__content-title">
                   31<sup>st</sup> May'19
                 </h2>
@@ -742,10 +737,7 @@ export default class OfPlatoAndPython extends React.Component {
             </div>
             <div className="timeline-item" data-text="THE FESTIVAL OF LIGHTS">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/25.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/25.jpg" />
                 <h2 className="timeline__content-title">
                   27<sup>th</sup> Oct'19
                 </h2>
@@ -763,10 +755,7 @@ export default class OfPlatoAndPython extends React.Component {
             </div>
             <div className="timeline-item" data-text="THE COLD WINTERS">
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/26.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/26.jpg" />
                 <h2 className="timeline__content-title">
                   24<sup>th</sup> Dec'19
                 </h2>
@@ -787,10 +776,7 @@ export default class OfPlatoAndPython extends React.Component {
               data-text="THIS TIMELINE WILL NEVER END"
             >
               <div className="timeline__content">
-                <img
-                  className="timeline__img"
-                  src="/images/personal/27.jpg"
-                />
+                <img className="timeline__img" src="/images/personal/27.jpg" />
                 <h2 className="timeline__content-title">Today - Forever</h2>
                 <p className="timeline__content-desc">
                   This year has been very challenging for us and is testing our

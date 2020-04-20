@@ -9,7 +9,17 @@ import TechnicalExperiences from "../components/TechnicalExperiences";
 import ResponsibilityPositions from "../components/ResponsibilityPositions";
 import Footer from "../components/Footer";
 
+import { initGA, logPageView } from "../components/googleAnalytics";
+
 export default class Index extends React.Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  }
+
   render() {
     return (
       <div>
