@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "bash pull_personal_files.sh && next",
-    "build": "bash pull_personal_files.sh && next build",
-    "start": "bash pull_personal_files.sh && next start"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
