@@ -15,6 +15,50 @@ export default class TechnicalExperiences extends React.Component {
         </div>
 
         <div className="container-fluid px-0 portfolio-entry">
+          <div className="row no-gutters d-md-flex justify-content-start text-wrapper">
+            <div
+              className="one-half img js-fullheight"
+              style={{
+                backgroundImage: "url('/images/external-content.duckduckgo.com.png')"
+              }}
+            ></div>
+            <div className="one-half half-text d-flex justify-content-end align-items-center">
+              <div className="text-2 align-items-start d-flex">
+                <div className="desc pt-5 pr-4 pl-4 pt-lg-0 pr-lg-5 pr-xl-0 pl-xl-0">
+                  <div className="top">
+                    <span className="subheading">Intern / Infrastructure</span>
+                    <h2 className="mb-4">
+                      <a>Infusion Framework</a>
+                    </h2>
+                  </div>
+                  <div className="absolute">
+                    <div>
+                      <ul>
+                        <li>
+                          Revamped the infrastructure of the documentation site
+                          of Infusion project.
+                        </li>
+                        <li>
+                          Migrated the deprecated DocPad Static Site Generator to
+                          the new 11ty framework, after design discussions regarding
+                          accessibility, maintainability, and flexibility of the different
+                          frameworks.
+                        </li>
+                        <li>
+                          Found newer alternatives to the old plugins, validate linting
+                          checks, upgraded codebase, set new conventions, reorganized code,
+                          modified complex functionalities to conform with the new framework.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid px-0 portfolio-entry">
           <div className="row no-gutters d-xl-flex justify-content-end text-wrapper">
             <div
               className="one-half img js-fullheight"
@@ -29,7 +73,7 @@ export default class TechnicalExperiences extends React.Component {
                   <div className="top">
                     <span className="subheading">Frontend Architecture </span>
                     <h2 className="mb-4">
-                      <a>GSoC'19 @Oppia</a>
+                      <a>Google Summer of Code</a>
                     </h2>
                   </div>
                   <div className="absolute">
@@ -52,6 +96,44 @@ export default class TechnicalExperiences extends React.Component {
                         <li>
                           <em>137,101</em> Lines of code, <em>72</em> Pull
                           Requests and numerous code reviews.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid px-0 portfolio-entry">
+          <div className="row no-gutters d-xl-flex justify-content-end text-wrapper">
+            <div
+              className="one-half img js-fullheight"
+              style={{
+                backgroundImage:
+                  "url('/images/backend.png')"
+              }}
+            ></div>
+            <div className="one-half half-text d-flex justify-content-end align-items-center">
+              <div className="text align-items-center d-flex">
+                <div className="desc pt-5 pl-4 pr-4 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">
+                  <div className="top">
+                    <span className="subheading">Intern / Backend </span>
+                    <h2 className="mb-4">
+                      <a>Resolab</a>
+                    </h2>
+                  </div>
+                  <div className="absolute">
+                    <div>
+                      <ul>
+                        <li>
+                          Designed the backend using the Django Rest Framework according to the
+                          specifications discussed.
+                        </li>
+                        <li>
+                          Integrated PostgreSQL and AWS S3 for storage, Razorpay to manage subscriptions,
+                          used best practices.
                         </li>
                       </ul>
                     </div>
@@ -107,104 +189,48 @@ export default class TechnicalExperiences extends React.Component {
           </div>
         </div>
 
-        <div className="container">
-          <div className="row no-gutters">
-            <div className="col-md-12 portfolio-wrap">
-              <div className="row no-gutters align-items-center flip-side">
-                <div
-                  className="col-md-5 order-md-last img js-fullheight"
-                  style={{
-                    backgroundImage:
-                      "url('/images/72578778_2932337460127363_3045265455066382336_n.jpg')"
-                  }}
-                ></div>
-                <div className="col-md-7">
-                  <div className="text pt-5 pr-md-5">
-                    <div className="px-4 px-lg-4">
-                      <div className="desc">
-                        <div className="top">
-                          <span className="subheading">Hackathon</span>
-                          <h2 className="mb-4">
-                            <a>RoadPE - Inter IIT</a>
-                          </h2>
-                        </div>
-                        <div className="absolute">
-                          <div>
-                            <ul>
-                              <li>
-                                Developed a responsive web-app for
-                                crowd-sourcing information to track progress of
-                                construction sites powered by gamification.
-                              </li>
-                              <li>
-                                Designed an interactive game using location pins
-                                from the Google Maps API.
-                              </li>
-                              <li>
-                                The admin panel was equipped with heatmaps and
-                                real time charts.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div className="container-fluid px-0 portfolio-entry">
+          <div className="row no-gutters d-md-flex justify-content-start text-wrapper">
+            <div
+              className="one-half img js-fullheight"
+              style={{
+                backgroundImage: "url('/images/bridge-design-IIT-bhu20.png')"
+              }}
+            ></div>
+            <div className="one-half half-text d-flex justify-content-end align-items-center">
+              <div className="text-2 align-items-start d-flex">
+                <div className="desc pt-5 pr-4 pl-4 pt-lg-0 pr-lg-5 pr-xl-0 pl-xl-0">
+                  <div className="top">
+                    <span className="subheading">College Fest / Full Stack</span>
+                    <h2 className="mb-4">
+                      <a>Technex 2020</a>
+                    </h2>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row no-gutters">
-            <div className="col-md-12 portfolio-wrap">
-              <div className="row no-gutters align-items-center flip-side">
-                <div
-                  className="col-md-5 img js-fullheight"
-                  style={{
-                    backgroundImage:
-                      "url('/images/bridge-design-IIT-bhu20.png')"
-                  }}
-                ></div>
-                <div className="col-md-7">
-                  <div className="text pt-5 pl-md-5 pl-md-4">
-                    <div className="px-4 px-lg-4">
-                      <div className="desc">
-                        <div className="top">
-                          <span className="subheading">Site from scratch</span>
-                          <h2 className="mb-4">
-                            <a>Technex 2020</a>
-                          </h2>
-                        </div>
-                        <div className="absolute">
-                          <div>
-                            <ul>
-                              <li>
-                                Designed and developed the official website for
-                                Technex - The Annual Techno-Management fest of
-                                IITBHU.
-                              </li>
-                              <li>
-                                With an Angular frontend and an attractive
-                                external theme integration, the site served as
-                                an essential part of the organization and
-                                success of the fest.
-                              </li>
-                              <li>
-                                The Django backend equipped with swagger
-                                provided a user friendly interface to visualize
-                                and consume the Technex API.
-                              </li>
-                              <li>
-                                Complete with social login and a user dashboard
-                                made in Angular, the website was viewed in more
-                                than 50 nations by more than 20k users.
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                  <div className="absolute">
+                    <div>
+                      <ul>
+                          <li>
+                            Designed and developed the official website for
+                            Technex - The Annual Techno-Management fest of
+                            IITBHU.
+                          </li>
+                          <li>
+                            With an Angular frontend and an attractive
+                            external theme integration, the site served as
+                            an essential part of the organization and
+                            success of the fest.
+                          </li>
+                          <li>
+                            The Django backend equipped with swagger
+                            provided a user friendly interface to visualize
+                            and consume the Technex API.
+                          </li>
+                          <li>
+                            Complete with social login and a user dashboard
+                            made in Angular, the website was viewed in more
+                            than 50 nations by more than 20k users.
+                          </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -251,11 +277,6 @@ export default class TechnicalExperiences extends React.Component {
                         </li>
                       </ul>
                     </div>
-                    {/* <p>
-                    <a href="#" className="custom-btn">
-                      View Portfolio
-                    </a>
-                  </p> */}
                   </div>
                 </div>
               </div>

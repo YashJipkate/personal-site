@@ -42,10 +42,10 @@
 
 
 	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
+		var height = $(window).width() > 768 ? $(window).height() : $(window).height()/4;
+		$('.js-fullheight').css('height', height);
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+			$('.js-fullheight').css('height', height);
 		});
 
 	};

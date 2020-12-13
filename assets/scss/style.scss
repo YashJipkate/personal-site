@@ -35,11 +35,11 @@ html {
 body {
 	font-family: $font-primary;
 	overflow-x: hidden;
-	background: $white;
+	background: $darken;
 	font-size: 16px;
 	line-height: 1.8;
 	font-weight: 400;
-	color: lighten($black,30%);
+	color: lighten($black,75%);
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -59,7 +59,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.5;
-	color: rgba(0,0,0,.8);
+	color: rgba(255, 255, 255, 0.8);
 	font-weight: 400;
 	font-family: $font-tertiary;
 }
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5,
 		left: 0;
 		top: 0;
 		margin-top: -130px;
-		background: $white!important;
+		background: $black!important;
 		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 		.nav-item {
 			&.active {
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5,
 		.nav-link {
 			padding-top: .9rem!important;
 			padding-bottom: .9rem!important;
-			color: $black!important;
+			color: $white!important;
 			&.active {
 				color: $primary!important;
 			}
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5,
 		}
 
 		.navbar-brand {
-			color: $black;
+			color: $white;
 		}
 	}
 }
@@ -1311,7 +1311,7 @@ textarea.form-control {
 				text-transform: uppercase;
 				font-size: 13px;
 				letter-spacing: 3px;
-				color: $black;
+				color: $white;
 				font-weight: 700;
 			}
 			h2{
@@ -1321,9 +1321,9 @@ textarea.form-control {
 					font-size: 16vw;
 				}
 				a{
-					color: $black;
+					color: rgb(218, 218, 218);
 					padding-bottom: 10px;
-					border-bottom: 3px solid $black;
+					border-bottom: 3px solid $white;
 				}
 			}
 			.text,.text-2{

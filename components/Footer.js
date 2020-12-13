@@ -56,10 +56,6 @@ export default class Footer extends React.Component {
                       </span>
                     </li>
                     <li>
-                      <span className="icon icon-phone"></span>
-                      <span className="text">+91 96955 78684</span>
-                    </li>
-                    <li>
                       <span className="icon icon-envelope"></span>
                       <span className="text">yashjipkate@gmail.com</span>
                     </li>
