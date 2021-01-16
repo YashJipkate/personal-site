@@ -1,6 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default class BlogSection extends React.Component {
   render() {
@@ -9,11 +10,7 @@ export default class BlogSection extends React.Component {
         <div className="row no-gutters d-xl-flex justify-content-end text-wrapper">
           <div
             className="one-half img js-fullheight"
-            style={{
-              backgroundImage:
-                "url('/images/blogsection.jpeg')",
-            }}
-          ></div>
+          ><Image src="/images/blogsection.jpeg" alt="Blogs section" objectFit="cover" layout="responsive" height={100} width={120} /></div>
           <div className="one-half half-text d-flex justify-content-end align-items-center">
             <div className="text align-items-center d-flex">
               <div className="desc pt-5 pl-4 pr-4 pt-lg-0 pl-lg-5 pl-xl-0 pr-xl-0">

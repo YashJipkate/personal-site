@@ -1,6 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -16,11 +17,7 @@ export default class BlogList extends React.Component {
             <div className="row no-gutters d-md-flex justify-content-start text-wrapper">
               <div
                 className="one-half img js-fullheight"
-                style={{
-                  backgroundImage:
-                    `url('/images/${blog.image}')`,
-                }}
-              ></div>
+              ><Image src={`/images/${blog.image}`} alt={blog.title} objectFit="cover" layout="responsive" height={100} width={120} /></div>
               <div className="one-half half-text d-flex justify-content-end align-items-center">
                 <div className="text-2 align-items-start d-flex">
                   <div className="desc pt-5 pr-4 pl-4 pt-lg-0 pr-lg-5 pr-xl-0 pl-xl-0">
