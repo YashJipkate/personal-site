@@ -28,7 +28,7 @@ export default class BlogSection extends React.Component {
                   </div>
                   <div>
                     <Link href="/blogs">
-                      <a className="custom-btn"> view all blogs ></a>
+                      <a className="custom-btn"> view all blogs &gt;</a>
                     </Link>
                   </div>
                 </div>
