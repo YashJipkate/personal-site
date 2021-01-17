@@ -8,6 +8,14 @@ import { getAllProjects } from "../../lib/api";
 import markdownToHtml from "../../lib/mdtohtml";
 
 export default class BlogList extends React.Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  }
+
   render() {
     return (
       <div>
