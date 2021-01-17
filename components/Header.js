@@ -75,6 +75,27 @@ export default class Header extends React.Component {
                     Resume
                   </a>
                 </li>
+                <li className="nav-item">
+                  <Link href="/blogs">
+                    <a className="nav-link">
+                      Blogs
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/projects">
+                    <a className="nav-link">
+                      Projects
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/roles">
+                    <a className="nav-link">
+                      Roles
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
