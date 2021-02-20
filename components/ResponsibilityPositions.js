@@ -18,7 +18,7 @@ export default class ResponsibilityPositions extends React.Component {
                   <div className="top">
                     <span className="subheading">Experience </span>
                     <h2 className="mb-4">
-                      <a>Positions of Responsibilities</a>
+                      <a>Positions of Leadership</a>
                     </h2>
                   </div>
                   <div className="absolute">

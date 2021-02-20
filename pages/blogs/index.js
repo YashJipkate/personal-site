@@ -7,6 +7,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { getAllBlogs } from "../../lib/api";
 
+import { initGA, logPageView } from "../../components/GoogleAnalytics";
+
 export default class BlogList extends React.Component {
   componentDidMount() {
     if (!window.GA_INITIALIZED) {

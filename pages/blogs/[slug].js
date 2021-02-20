@@ -5,6 +5,8 @@ import Header from "../../components/Header";
 import { getBlogBySlug, getAllBlogs } from "../../lib/api";
 import markdownToHtml from "../../lib/mdtohtml";
 
+import { initGA, logPageView } from "../../components/GoogleAnalytics";
+
 export default class Content extends React.Component {
   componentDidMount() {
     if (!window.GA_INITIALIZED) {
