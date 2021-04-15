@@ -25,7 +25,6 @@ export default class Index extends React.Component {
         <Header title="Home" />
         <Landing />
         <About />
-        <BlogSection />
         <TechnicalExperiences />
         <ResponsibilityPositions />
         <Footer />
