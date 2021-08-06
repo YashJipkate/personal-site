@@ -7,8 +7,6 @@ shortDesc: 'My GSoC21 experience with UCCROSS, also GSoC submission report for t
 date: 'August 13, 2021'
 ---
 
-# Google Summer of Code 2021 with UCCROSS
-
 Google Summer of Code is a program, sponsored by Google, that aims to connect students with open source projects. Many people go as far as to call GSoC as the 'Olympics of Software Developers'. I applied in the past two years, but couldn't commit to it fully due to various reasons. This year, marking my third attempt, I was selected to work on the documentation of the [SkyhookDM project](https://github.com/uccross/skyhookdm-arrow) that is being developed by the [UCCROSS](https://uccross.github.io/) community.
 
 ## Port wiki to ReadTheDocs or another documentation platform - what does that mean?
