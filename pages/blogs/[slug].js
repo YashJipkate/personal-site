@@ -25,6 +25,7 @@ export default class Content extends React.Component {
             <div className="row justify-content">
               <div className="col-md-8">
                 <h2>{this.props.blog.title}</h2>
+                <p>{this.props.blog.date}</p>
                 <div
                   dangerouslySetInnerHTML={{ __html: this.props.blog.content }}
                 />
@@ -44,6 +45,7 @@ export async function getStaticProps({ params }) {
     "slug",
     "author",
     "content",
+    "date",
   ]);
   const content = markdownToHtml(blog.content || "");
 

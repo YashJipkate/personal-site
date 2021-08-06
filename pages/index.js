@@ -27,6 +27,7 @@ export default class Index extends React.Component {
         <About />
         <TechnicalExperiences />
         <ResponsibilityPositions />
+        <BlogSection />
         <Footer />
       </div>
     );
