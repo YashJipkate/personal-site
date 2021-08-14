@@ -11,7 +11,7 @@ Google Summer of Code is a program, sponsored by Google, that aims to connect st
 
 ## Port wiki to ReadTheDocs or another documentation platform - what does that mean?
 
-The above is the title of my project. But more importantly, what does that say or what is the purpose of this project? As you might have guessed, this project aims to do some changes to the _existing_ documentation. The main idea is to make the documentation more user friendly and more accessible. The current documentation for SkyhookDM was scattered across various places, and it was a huge pain to navigate through them. The documentation was also not very user friendly, and the code was not very well documented. _Par exemple_, the instructions to setup a local instance was in the project's README, the cloud setup instructions were spread across multiple repos depending on how to deploy it, and the concepts and architecture were in a totally different site, among many others. This makes it difficult to find the information you need, as well as maintaining them.
+The above is the title of my project. But more importantly, what does that say or what is the purpose of this project? As you might have guessed, this project aims to do some changes to the _existing_ documentation. The main idea is to make the documentation more user friendly and more accessible. The current documentation for SkyhookDM was scattered across various places, and it was a huge pain to navigate through them. The documentation was also not very user friendly, and the code was not very well documented. For example, the instructions to setup a local instance was in the project's README, the cloud setup instructions were spread across multiple repos depending on how to deploy it, and the concepts and architecture were in a totally different site, among many others. This makes it difficult to find the information you need, as well as maintaining them.
 
 Now the task - **Consolidate** the various documentation pieces into a single place, or atleast connect them centrally, **Improve and Expand** the exisiting documentation/docstrings, adding any missing information or improving the existing ones, and **Deploying** the documentation to a dedicated website using a static site generator, and also integrating the relevant parts of API docstrings into the upstream [Arrow](https://github.com/apache/arrow) project.
 
@@ -19,7 +19,7 @@ This is a very important task, as it will help the community to understand the p
 
 ## How did I do it then?
 
-I started by taking a look at the existing documentation, and trying to understand what could be added. I also took a look at the existing docstrings, and trying to understand what could be improved and what could be done to make it more comprehensive and also conform it to Apache standards.
+I started by taking a look at the existing documentation, and trying to understand what could be added. I also took a look at the existing docstrings, and tried to understand what could be improved and what could be done to make it more comprehensive and also conform it to Apache standards.
 
 ### Docstrings
 
@@ -30,7 +30,7 @@ These were the PRs regarding this:
 - [Added docstrings to file_rados_parquet.cc/h](https://github.com/uccross/skyhookdm-arrow/pull/163)
 - [Add docstrings to cls_arrow.cc and file_rados_parquet.h](https://github.com/uccross/skyhookdm-arrow/pull/169)
 - [Fix docstring param in file_rados_parquet.h](https://github.com/uccross/skyhookdm-arrow/pull/172)
-- [Add docstrigs for _rados.pyx_ and _rados.py_ modules.](https://github.com/uccross/skyhookdm-arrow/pull/176)
+- [Add docstrings for _rados.pyx_ and _rados.py_ modules.](https://github.com/uccross/skyhookdm-arrow/pull/176)
 
 ### Documentation
 
@@ -46,7 +46,7 @@ These were the PRs regarding this:
 
 ### Integration of the docstrings with the upstream Arrow project
 
-The docstrings of the API need to be documented in the Arrow documentation that would appear in [Arrow's documentation site](arrow.apache.org/docs/) so contributors and consumers of Apache Arrow can know about the RADOS Parquet APIs without having a prior knowlodge of the SkyhookDM project. I referenced the API docstrings in the appropriate sections of the Arrow documentation.
+The docstrings of the API need to be documented in the Arrow documentation that would appear in [Arrow's documentation site](arrow.apache.org/docs/) so contributors and consumers of Apache Arrow can know about the RADOS Parquet APIs without having a prior knowledge of the SkyhookDM project. I referenced the API docstrings in the appropriate sections of the Arrow documentation.
 
 This was the PR regarding this:
 
@@ -54,7 +54,7 @@ This was the PR regarding this:
 
 ### Deploying the documentation on ReadTheDocs
 
-During the review of the SkyhookDM PR against the upstream Arrow project, its maintainers suggested to move the documentation regarding the in-depth details and deployment instructions in a seperate repository. My mentor [Jayjeet](https://github.com/JayjeetAtGithub) created a [new repository](https://github.com/uccross/skyhookdm) that acted as a parent to the main skyhookdm-arrow repo, and added most of the documentation and deployment scripts to it, retaining only the necessary information in the main repository. I then deployed this repository to ReadTheDocs, adding the necessary configuration. Since I was granted maintainer privileges to this repository, I didn't make PRs and instead just committed to the repository. You can find a list of my commits [here](https://github.com/uccross/skyhookdm/commits?author=YashJipkate).
+During the review of the SkyhookDM PR against the upstream Arrow project, its maintainers suggested to move the documentation regarding the in-depth details and deployment instructions in a separate repository. My mentor [Jayjeet](https://github.com/JayjeetAtGithub) created a [new repository](https://github.com/uccross/skyhookdm) that acted as a parent to the main skyhookdm-arrow repo, and added most of the documentation and deployment scripts to it, retaining only the necessary information in the main repository. I then deployed this repository to ReadTheDocs, adding the necessary configuration. Since I was granted maintainer privileges to this repository, I didn't make PRs and instead just committed to the repository. You can find a list of my commits [here](https://github.com/uccross/skyhookdm/commits?author=YashJipkate).
 
 The documentation is now live at skyhookdm-arrow.readthedocs.io/!
 
