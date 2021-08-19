@@ -63,7 +63,7 @@ export default class Header extends React.Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <span className="nav-link">
-                    <u>Jr. Undergraduate, IIT(BHU)</u>
+                    <u>Technologist, LG Ads</u>
                   </span>
                 </li>
                 <li className="nav-item">
