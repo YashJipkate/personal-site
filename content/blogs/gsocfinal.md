@@ -56,7 +56,7 @@ This was the PR regarding this:
 
 During the review of the SkyhookDM PR against the upstream Arrow project, its maintainers suggested moving the documentation regarding the in-depth details and deployment instructions in a separate repository. My mentor [Jayjeet](https://github.com/JayjeetAtGithub) created a [new repository](https://github.com/uccross/skyhookdm) that acted as a parent to the main skyhookdm-arrow repository, and added most of the documentation and deployment scripts to it, retaining only the necessary information in the main repository. I then deployed this repository to ReadTheDocs, adding the necessary configuration. Since I was granted maintainer privileges to this repository, I didn't make PRs and instead just committed to the repository. You can find a list of my commits [here](https://github.com/uccross/skyhookdm/commits?author=YashJipkate).
 
-The documentation is now live at skyhookdm-arrow.readthedocs.io/!
+The documentation is now live at [skyhookdm-arrow.readthedocs.io/](skyhookdm-arrow.readthedocs.io/)!
 
 ## What did I learn?
 
